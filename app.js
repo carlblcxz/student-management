@@ -9,7 +9,7 @@ const app = express();
 const db = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || 'root', // MAMP default password
+  password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'student_management',
   port: process.env.DB_PORT || 8889,         // MAMP default MySQL port
   waitForConnections: true,
